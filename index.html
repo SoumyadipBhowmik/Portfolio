@@ -8,7 +8,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Russo+One&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Russo+One&display=swap" rel="stylesheet">
+
+
     <link rel="stylesheet" href="default.css">
+    <link id="theme-style" rel="stylesheet" href="">
+
+
     <title>Soumyadip Bhowmik</title>
 </head>
 <body>
@@ -27,7 +32,7 @@
                     </div>
 
                     <ul id="navigation">
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="https://github.com/SoumyadipBhowmik" target="_blank">Github</a></li>
                     </ul>
                 </div>
 
@@ -36,16 +41,25 @@
                     <h5 style="text-align: center; line-height: 0;">Change Theme</h5>
 
                     <div id="theme-options-wrapper">
-                        <div class="theme-dot" id="light-mode"></div>
-                        <div class="theme-dot" id="blue-mode"></div>
-                        <div class="theme-dot" id="green-mode"></div>
-                        <div class="theme-dot" id="purple-mode"></div>
+                        <div data-mode="light" class="theme-dot" id="light-mode"></div>
+                        <div data-mode="blue" class="theme-dot" id="blue-mode"></div>
+                        <div data-mode="green" class="theme-dot" id="green-mode"></div>
+                        <div data-mode="purple" class="theme-dot" id="purple-mode"></div>
                     </div>
                     <p id="settings-note">*Theme settings will be saved for<br>your next visit</p>
                 </div>
 
                 <div class="right-column">
-                    Right-column
+                    <div id="preview-shadow">
+                        <div id="preview">
+                            <div id="corner-top-left" class="corner"></div>
+                            <div id="corner-top-right" class="corner"></div>
+                            <h3>What I do</h3>
+                            <p>A student, an Undergrad Engineer, Technology Enthusiast and an aspiring Full-Stack Developer.</p>
+                            <div id="corner-bottom-right"class="corner"></div>
+                            <div id="corner-bottom-left" class="corner"></div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -53,21 +67,103 @@
 
     <section class="s2">
         <div class="main-container">
-            About
+            <div class="about-wrapper">
+                <div class="about-me">
+                    <h4>More about me</h4>
+                    <p>I'm a Civil Engineering undergrad who loves technology and want to contribute something useful in it.</p>
+                    <p>I like building a lot of projects because I believe that implementing makes you learn more than theory. I am also into open source contribution.</p>
+                    <hr>
+                    <h4>TOP EXPERTISE</h4>
+                    <p>Full Stack Developer with primary focus on Django + React: <a href="resume\Soumyadip_Bhowmik_7001392045.pdf" target="_blank">Download Resume</a></p>
+
+                    <div id="skills">
+                        <ul>
+                            <li>Python</li>
+                            <li>Django</li>
+                            <li>C</li>
+                            <li>C++</li>
+                            <li>Java</li>
+                        </ul>
+                        <ul>
+                            <li>HTML/CSS</li>
+                            <li>AWS</li>
+                            <li>JavaScript</li>
+                            <li>ReactJs</li>
+                            <li>NodeJs</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="social-links">
+                    <img id="social-img" src="images\twitter.png">
+                    <br>
+                    <img id="social-img" src="images\linkedin.png">
+                    <h3>Find me on Twitter & Linkedin</h3>
+
+                    <a target="_blank" href="https://twitter.com/soumyaadipp">Twitter: @soumyaadipp</a>
+                    <br>
+                    <a target="_blank" href="https://www.linkedin.com/in/soumyadip-bhowmik/">LinkedIn: @soumyadip-bhowmik</a>
+                </div>
+            </div>
         </div>
     </section>
 
     <section class="s1">
         <div class="main-container">
-            Portfolio
+            <h3 style="text-align: center;">Some of my projects</h3>
+
+            <div class="post-wrapper">
+
+                <div class="post">
+                    <img class="thumbnail" src="images\duel-it-out.gif">
+                    <div class="post-preview">
+                        <h5 class="post-title">DUEL IT OUT</h5>
+                        <p class="post-intro">Pixel-art 1v1 action game with 6 characters created using Pygame.</p>
+                        <a target="_blank" href="https://github.com/SoumyadipBhowmik/Fighter_game">Read More</a>
+                    </div>
+                </div>
+
+                <div class="post">
+                    <img class="thumbnail" src="images\home-automation.gif">
+                    <div class="post-preview">
+                        <h5 class="post-title">Iot Based Home Automation Solution</h5>
+                        <p class="post-intro">Complete Home Automation using Cloud Iot and Arduino.</p>
+                        <a target="_blank" href="https://github.com/SoumyadipBhowmik/IOT_Project">Read More</a>
+                    </div>
+                </div>
+
+                <div class="post">
+                    <img class="thumbnail" src="images\gift.gif">
+                    <div class="post-preview">
+                        <h5 class="post-title">Santa's Surprise</h5>
+                        <p class="post-intro">A mystery box created using HTML+CSS.</p>
+                        <a target="_blank" href="https://thunderous-pika-ae290c.netlify.app/">Read More</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
     <section class="s2">
         <div class="main-container">
-            Contact
+            <h3 style="text-align: center;">Get in Touch</h3>
+            <form id="contact-form">
+
+                <label for="name">Name</label>
+                <input class="input-field" type="text" name="name">
+
+                <label for="subject">Subject</label>
+                <input class="input-field" type="text" name="subject">
+
+                <label for="email">Email</label>
+                <input class="input-field" type="email" name="email">
+
+                <label for="message">Message</label>
+                <textarea class="input-field" name="message"></textarea>
+
+                <input id="submit-btn" type="submit" value="Send">
+            </form>
         </div>
     </section>
-
+    <script type="text/javascript" src="script.js"></script>
 </body>
 </html>
