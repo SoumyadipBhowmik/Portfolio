@@ -1,6 +1,12 @@
+let theme = localStorage.getItem('theme')
+if(theme == null){
+    setTheme('light')
+}
+else{
+    setTheme(theme)
+}
+
 let themeDots = document.getElementsByClassName('theme-dot')
-
-
 
 for(var i = 0; i < themeDots.length; i++){
     themeDots[i].addEventListener('click', function(){
@@ -23,4 +29,5 @@ function setTheme(mode){
     if(mode == 'purple'){
         document.getElementById('theme-style').href = 'purple.css'
     }
+    localStorage.setItem('theme', mode)
 }
